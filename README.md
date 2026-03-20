@@ -22,7 +22,7 @@ This project shows how deep learning can be used for image classification and ha
 
 ## File Included
 
-- mnist_digit_recognition.ipynb
+- MNIST.ipynb
 
 ## Conclusion
 
