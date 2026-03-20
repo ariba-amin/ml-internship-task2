@@ -1,75 +1,29 @@
 # MNIST Digit Recognition
 
-## 📌 Project Overview
-This project is part of a Machine Learning Internship task. The goal is to build a machine learning model that can recognize handwritten digits (0–9) using the MNIST dataset.
+This project is based on the MNIST Digit Recognition task. The goal of this project is to build a machine learning model that can recognize handwritten digits from 0 to 9.
 
----
+The MNIST dataset contains handwritten digit images. It includes 60,000 training images and 10,000 testing images. Each image is 28 x 28 pixels in grayscale format.
 
-## 📊 Dataset
-The MNIST dataset is a collection of handwritten digit images. It contains:
-- 60,000 training images
-- 10,000 testing images
-- Each image is 28×28 pixels (grayscale)
+In this project, the dataset was loaded using TensorFlow. The images were explored and visualized. After that, the pixel values were normalized from 0 to 255 into a range of 0 to 1. This preprocessing step helps improve model performance.
 
-The dataset is directly loaded using TensorFlow.
+A neural network model was built using Keras. The model includes a Flatten layer, a Dense hidden layer with ReLU activation, and an output layer with Softmax activation. The model was then trained on the training dataset.
 
----
+After training, the model was evaluated on the test dataset to measure its accuracy. The trained model was also used to make predictions on test images.
 
-## ⚙️ Technologies Used
+This project shows how deep learning can be used for image classification and handwritten digit recognition.
+
+## Tools and Libraries Used
+
 - Python
 - NumPy
 - Matplotlib
-- TensorFlow / Keras
+- TensorFlow
+- Keras
 
----
+## File Included
 
-## 🧠 Steps Performed
-
-### 1. Import Libraries
-Required libraries such as NumPy, Matplotlib, and TensorFlow were imported.
-
-### 2. Load Dataset
-The MNIST dataset was loaded using TensorFlow.
-
-### 3. Data Exploration
-The shape of training and testing data was checked and sample images were visualized.
-
-### 4. Data Preprocessing
-Pixel values were normalized from 0–255 to 0–1 for better model performance.
-
-### 5. Model Building
-A neural network model was created using:
-- Flatten layer
-- Dense hidden layer (ReLU)
-- Output layer (Softmax)
-
-### 6. Model Training
-The model was trained on the training dataset for multiple epochs.
-
-### 7. Model Evaluation
-The model was evaluated on test data to check accuracy.
-
-### 8. Predictions
-The trained model was used to predict digits from test images.
-
----
-
-## 📈 Results
-The model achieved good accuracy in recognizing handwritten digits from 0 to 9.
-
----
-
-## 📂 Files Included
 - mnist_digit_recognition.ipynb
 
----
+## Conclusion
 
-## 🚀 How to Run
-1. Open the notebook in Jupyter Notebook or Google Colab
-2. Run all cells step by step
-3. View results and predictions
-
----
-
-## 📌 Conclusion
-This project successfully demonstrates how a neural network can be used to recognize handwritten digits using the MNIST dataset.
+The MNIST digit recognition model was successfully built, trained, and tested. The model was able to classify handwritten digits with good accuracy.
